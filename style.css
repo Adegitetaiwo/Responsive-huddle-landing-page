@@ -249,7 +249,7 @@ add to this if you add any card to the markup */
     margin-top: 20vh;
 }
 .card-item:first-child {
-    padding: 70px 80px 0 90px;
+    padding: 45px 80px 0 90px;
 }
 .card-item:first-child p {
     color: hsl(208, 11%, 55%);
