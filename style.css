@@ -47,15 +47,15 @@ nav  >  ul a {
 }
 
 .header-text {
-    width: 40%;
+    width: 500px;
 }
 
 .header-text {
     display: flex;
     flex-direction: column;
-    max-height: 400px;
+    /* max-height: 400px; */
     /* background-color: aqua; */
-    margin-top: calc(50vh - 230px);
+    margin-top: calc(50vh - 250px);
     padding: 40px 80px 60px 80px;
 }
 .header-text h1 {
@@ -63,13 +63,15 @@ nav  >  ul a {
     font-size: 2.3rem;
 }
 .header-text p {
-    margin-top: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     line-height: 22px;
 }
 .header-text button {
-    margin-top: 30px;
+    margin-top: 15px;
+    /* flex-grow: 1; */
     width: 60%;
-    height: 17%;
+    height: 55px;
     outline: none;
     border: none;
     font-size: 12px;
