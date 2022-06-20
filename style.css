@@ -549,14 +549,19 @@ footer {
     height: 60vh;
     background-color: hsl(192, 100%, 9%);
     display: flex;
+    color: #ffffff;
 }
-
+footer a{
+    color: #ffffff;
+}
 footer > .ft-intro,
 footer > .ft-social {
     width: 35%;
+    padding-top: 150px;
 }
 
 footer>.ft-link-1,
 footer>.ft-link-2 {
     width: 15%;
+    padding-top: 150px;
 }
