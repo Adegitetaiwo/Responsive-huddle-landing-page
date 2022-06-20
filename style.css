@@ -241,11 +241,6 @@ main {
     /* 1st card margin top + card height + card margin top * 4 */
     height: calc((20vh + (45vh / 2) + 10vh) * 3.8);
 }
-footer {
-    width: 100vw;
-    height: 60vh;
-    background-color: hsl(192, 100%, 9%);
-}
 
 .card {
     display: flex;
@@ -546,4 +541,22 @@ section[class="call-to-act-sec"] {
         height: 45px;
         font-size: 12px;
     }
+}
+
+
+footer {
+    width: 100vw;
+    height: 60vh;
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+}
+
+footer > .ft-intro,
+footer > .ft-social {
+    width: 35%;
+}
+
+footer>.ft-link-1,
+footer>.ft-link-2 {
+    width: 15%;
 }
