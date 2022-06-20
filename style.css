@@ -8,6 +8,7 @@
 body {
     display: flex;
     flex-direction: column;
+    color: hsl(192, 100%, 9%);
 }
 h1 {
     font-family: 'Poppins',
@@ -72,12 +73,13 @@ nav  >  ul a {
     /* flex-grow: 1; */
     width: 60%;
     height: 55px;
-    outline: none;
     border: none;
     font-size: 12px;
     border-radius: 50px;
     background-color: hsl(322, 100%, 66%);
+    box-shadow: -1px 9px 33px 6px #28282812;
     color: #ffffff;
+    cursor: pointer;
 }
 .header-img {
     width: 60%;
@@ -408,12 +410,140 @@ section[class="call-to-act-sec"] {
     left: calc(50% - (47% / 2));
 
     /* negative height of the main section and some adustment */
-    bottom: -230vh;
+    bottom: -231vh;
 }
 .call-to-act-card {
     background-color: #ffffff;
     box-shadow: -1px 9px 33px 6px #28282812;
     width: 100%;
-    height: 25vh;
+    height: 27vh;
     border-radius: 15px;
+    text-align: center;
+}
+.call-to-act-card p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif !important;
+    padding-top: 46px;
+}
+.call-to-act-card button {
+    margin-top: 16px;
+    width: 50%;
+    height: 53px;
+    border: none;
+    font-size: 15px;
+    border-radius: 50px;
+    background-color: hsl(322, 100%, 66%);
+    color: #ffffff;
+    box-shadow: -1px 9px 33px 6px #28282812;
+    cursor: pointer;
+}
+
+@media (max-width: 912px) {
+    section[class="call-to-act-sec"] {
+            width: 57%;
+            margin: auto;
+            position: absolute;
+            left: calc(50% - (57% / 2));
+    
+            /* negative height of the main section and some adustment */
+            bottom: -116vh;
+        }
+    
+        .call-to-act-card {
+            background-color: #ffffff;
+            box-shadow: -1px 9px 33px 6px #28282812;
+            width: 100%;
+            height: 16.5vh;
+            border-radius: 15px;
+            text-align: center;
+        }
+    
+        .call-to-act-card p {
+            font-size: 1.3rem;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif !important;
+            padding-top: 40px;
+        }
+    
+        .call-to-act-card button {
+            margin-top: 15px;
+            width: 50%;
+            height: 51px;
+            font-size: 13px;
+        }
+}
+
+@media (max-width: 540px) {
+section[class="call-to-act-sec"] {
+        width: 75%;
+        margin: auto;
+        position: absolute;
+        left: calc(50% - (75% / 2));
+
+        /* negative height of the main section and some adustment */
+        bottom: -299vh;
+    }
+
+    .call-to-act-card {
+        background-color: #ffffff;
+        box-shadow: -1px 9px 33px 6px #28282812;
+        width: 100%;
+        height: 25vh;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .call-to-act-card p {
+        font-size: 1.1rem;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif !important;
+        padding-top: 46px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .call-to-act-card button {
+        margin-top: 16px;
+        width: 50%;
+        height: 49px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+section[class="call-to-act-sec"] {
+        width: 80%;
+        margin: auto;
+        position: absolute;
+        left: calc(50% - (75% / 2));
+
+        /* negative height of the main section and some adustment */
+        bottom: -330vh;
+    }
+
+    .call-to-act-card {
+        background-color: #ffffff;
+        box-shadow: -1px 9px 33px 6px #28282812;
+        width: 100%;
+        height: 25vh;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .call-to-act-card p {
+        font-size: 0.9rem;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif !important;
+        padding-top: 35px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .call-to-act-card button {
+        margin-top: 12px;
+        width: 50%;
+        height: 45px;
+        font-size: 12px;
+    }
 }
