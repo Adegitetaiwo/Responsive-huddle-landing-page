@@ -400,3 +400,20 @@ add to this if you add any card to the markup */
         margin-top: 8vh;
     }
 }
+
+section[class="call-to-act-sec"] {
+    width: 47%;
+    margin: auto;
+    position: absolute;
+    left: calc(50% - (47% / 2));
+
+    /* negative height of the main section and some adustment */
+    bottom: -230vh;
+}
+.call-to-act-card {
+    background-color: #ffffff;
+    box-shadow: -1px 9px 33px 6px #28282812;
+    width: 100%;
+    height: 25vh;
+    border-radius: 15px;
+}
