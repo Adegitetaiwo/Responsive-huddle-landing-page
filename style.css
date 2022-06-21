@@ -184,7 +184,7 @@ nav  >  ul a {
 
     header {
             width: 100vw;
-            height: 135vh;
+            height: 870px;
         }
 
     /* logo */
@@ -239,7 +239,7 @@ main {
     width: 100vw;
 
     /* 1st card margin top + card height + card margin top * 4 */
-    height: calc((20vh + (45vh / 2) + 10vh) * 3.8);
+    height: calc(870px + (230px) * 3);
 }
 
 .card {
@@ -265,7 +265,7 @@ add to this if you add any card to the markup */
 }
 .card .card-item {
     width: 50%;
-    height: 42vh;
+    height: 300px;
 }
 .card:first-child {
     margin-top: 20vh;
@@ -297,7 +297,7 @@ add to this if you add any card to the markup */
 @media (max-width: 912px) {
     .card .card-item {
         width: 50%;
-        height: 25vh;
+        height: 300px;
     }
 
     main {
@@ -312,7 +312,7 @@ add to this if you add any card to the markup */
             width: 100vw;
     
             /* 1st card margin top + card height + card margin top * 4 */
-            height: calc((20vh + 45vh + 10vh) * 3.5);
+            height: calc(870px + (300px) * 3)
         }
 
     .card {
@@ -326,11 +326,11 @@ add to this if you add any card to the markup */
     }
 .card .card-item {
     width: 100%;
-    height: 30vh;
+    height: 300px;
 }
 
 .card-item:first-child {
-    padding: 40px 50px 10px 50px;
+    padding: 50px 50px 10px 50px;
     text-align: center;
 }
 .card-item:first-child h1 {
@@ -358,7 +358,7 @@ add to this if you add any card to the markup */
             width: 100vw;
     
             /* 1st card margin top + card height + card margin top * 4 */
-            height: calc((20vh + 70vh + 5vh) * 3);
+            height: calc(870px + (300px) * 3);
         }
 
     .card {
@@ -374,11 +374,11 @@ add to this if you add any card to the markup */
 
     .card .card-item {
         width: 100%;
-        height: 35vh;
+        height: 200px;
     }
 
     .card-item:first-child {
-        padding: 0 16px 20px 16px;
+        padding: 10px 16px 20px 16px;
         text-align: center;
     }
 
@@ -387,7 +387,7 @@ add to this if you add any card to the markup */
     }
 
     .card-item:first-child p {
-        /* padding-top: 5px; */
+        padding-top: 10px;
     }
 
     /* .card-item:l */
@@ -405,13 +405,13 @@ section[class="call-to-act-sec"] {
     left: calc(50% - (47% / 2));
 
     /* negative height of the main section and some adustment */
-    bottom: -231vh;
+    bottom: calc(-870px - ((230px) * 3) - 170px - 80px);
 }
 .call-to-act-card {
     background-color: #ffffff;
     box-shadow: -1px 9px 33px 6px #28282812;
     width: 100%;
-    height: 27vh;
+    height: 240px;
     border-radius: 15px;
     text-align: center;
 }
@@ -514,14 +514,14 @@ section[class="call-to-act-sec"] {
         left: calc(50% - (75% / 2));
 
         /* negative height of the main section and some adustment */
-        bottom: -330vh;
+        bottom: calc(-870px - ((300px) * 3) - 170px - 100px);
     }
 
     .call-to-act-card {
         background-color: #ffffff;
         box-shadow: -1px 9px 33px 6px #28282812;
         width: 100%;
-        height: 25vh;
+        height: 170px;
         border-radius: 15px;
         text-align: center;
     }
@@ -557,11 +557,45 @@ footer a{
 footer > .ft-intro,
 footer > .ft-social {
     width: 35%;
-    padding-top: 150px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 footer>.ft-link-1,
 footer>.ft-link-2 {
     width: 15%;
-    padding-top: 150px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer>.ft-social {
+    display: flex;
+    flex-direction: row;
+}
+footer > .ft-social div {
+    text-align:center;
+	width:0px;
+	height:0px;
+	padding:20px;
+	border-top-right-radius: 	20px;
+	border-top-left-radius: 	20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 	20px; 
+	-moz-border-radius: 		20px 20px 20px 20px;
+	-webkit-border-radius: 		20px 20px 20px 20px;
+	-khtml-border-radius: 		20px 20px 20px 20px; 	
+	color:#FFFFFF;
+}
+footer > .ft-social i {
+    font-size: 10px;
+    font-weight: lighter;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    padding: 10px 12px;
+    padding-left: 5px;
+}
+footer>.ft-social i:first-child {
+    padding: 10px 12px;
 }
