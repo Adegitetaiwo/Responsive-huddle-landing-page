@@ -9,22 +9,23 @@ body {
     display: flex;
     flex-direction: column;
     color: hsl(192, 100%, 9%);
+    width: 100%;
 }
 h1 {
     font-family: 'Poppins',
         sans-serif !important;
 }
-p, a, button, label, li {
+p, a, button, label, li, small {
     font-family: 'Open Sans', sans-serif;
 }
 header {
-    width: 100vw;
+    width: 100%;
     height: 120vh;
     background-image: url("images/bg-hero-desktop.svg");
     background-color: hsl(193, 100%, 96%);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    color: hsl(192, 100%, 9%);
+    /* color: hsl(192, 100%, 9%); */
 }
 nav > img {
     width: 150px;
@@ -49,6 +50,7 @@ nav  >  ul a {
 
 .header-text {
     width: 500px;
+    width: 40%;
 }
 
 .header-text {
@@ -236,7 +238,7 @@ nav  >  ul a {
 }
 
 main {
-    width: 100vw;
+    width: 100%;
 
     /* 1st card margin top + card height + card margin top * 4 */
     height: calc(870px + (230px) * 3);
@@ -301,7 +303,7 @@ add to this if you add any card to the markup */
     }
 
     main {
-            width: 100vw;
+            width: 100%;
     
             /* 1st card margin top + card height + card margin top * 4 */
             height: calc((20vh + 45vh + 10vh) * 1.8);
@@ -309,7 +311,7 @@ add to this if you add any card to the markup */
 }
 @media (max-width: 540px) {
     main {
-            width: 100vw;
+            width: 100%;
     
             /* 1st card margin top + card height + card margin top * 4 */
             height: calc(870px + (300px) * 3)
@@ -405,7 +407,7 @@ section[class="call-to-act-sec"] {
     left: calc(50% - (47% / 2));
 
     /* negative height of the main section and some adustment */
-    bottom: calc(-870px - ((230px) * 3) - 170px - 80px);
+    bottom: calc(-870px - ((230px) * 3) - 170px - 40px);
 }
 .call-to-act-card {
     background-color: #ffffff;
@@ -545,19 +547,21 @@ section[class="call-to-act-sec"] {
 
 
 footer {
-    width: 100vw;
-    height: 650px;
+    width: 100%;
+    height: 600px;
     background-color: hsl(192, 100%, 9%);
     display: flex;
     color: #ffffff;
     padding: 100px;
+    padding-right: 50px;
 }
 footer a{
     color: #ffffff;
+    text-decoration: none;
 }
 footer > .ft-intro,
 footer > .ft-social {
-    width: 35%;
+    width: 30%;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -565,23 +569,36 @@ footer > .ft-social {
 
 footer>.ft-link-1,
 footer>.ft-link-2 {
-    width: 15%;
-    margin-top: 150px;
+    width: 20%;
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
+    margin-left: 0px;
 }
 
-footer > .ft-intro img {
-    background-color: #ffffff;
+
+footer > .ft-intro div {
+    padding-top: 20px;
 }
 footer > .ft-intro div > img {
     height: 20px;
-
 }
+footer > .ft-intro div > p{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+footer > .ft-intro div > a {
+    padding-left: 20px;
+}
+footer > .ft-intro svg {
+    margin-bottom: 40px;
+}
+
 footer>.ft-social {
     display: flex;
-    flex-direction: row;
-    margin-top: 150px;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-left: 50px;
 }
 
 footer > .ft-social i {
@@ -590,8 +607,13 @@ footer > .ft-social i {
     border: 1px solid #ffffff;
     border-radius: 50%;
     padding: 8px 8px;
-    margin-left: 5px;
+    margin-left: 15px;
 }
 footer>.ft-social div:first-child i {
     padding: 8px 10px;
+}
+footer small {
+    clear: both;
+    display: block;
+    margin-top: 200px;
 }
