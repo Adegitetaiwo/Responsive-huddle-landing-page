@@ -249,7 +249,7 @@ main {
     flex-direction: row;
     width: 75vw;
     margin-left: calc(50vw - (75vw / 2));
-    margin-top: 9vh;
+    margin-top: 90px;
     border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0#1817170a, 0 8px 20px 0 #25252513;
