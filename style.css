@@ -306,7 +306,7 @@ add to this if you add any card to the markup */
             width: 100%;
     
             /* 1st card margin top + card height + card margin top * 4 */
-            height: calc((20vh + 45vh + 10vh) * 1.8);
+            height: calc(500px + (330px) * 4);
         } 
 }
 @media (max-width: 540px) {
@@ -444,14 +444,14 @@ section[class="call-to-act-sec"] {
             left: calc(50% - (57% / 2));
     
             /* negative height of the main section and some adustment */
-            bottom: calc(-870px - ((230px) * 3) - 170px - 40px);
+            bottom: calc(-870px - ((230px) * 3) - 30px);
         }
     
         .call-to-act-card {
             background-color: #ffffff;
             box-shadow: -1px 9px 33px 6px #28282812;
             width: 100%;
-            height: 16.5vh;
+            height: 210px;
             border-radius: 15px;
             text-align: center;
         }
@@ -617,16 +617,31 @@ footer small {
     display: block;
     margin-top: 200px;
 }
+@media (max-width: 912px) {
+    footer {
+        width: 100%;
+        height: 600px;
+        background-color: hsl(192, 100%, 9%);
+        display: flex;
+        color: #ffffff;
+        padding: 50px 90px;
+        padding-right: 50px;
+    }
 
+    footer > .ft-link-1,
+    footer > .ft-link-2{
+        padding-left: 10px;
+    }
+}
 @media (max-width: 540px) {
 footer {
         width: 100%;
-        height: 1700px;
+        height: 1000px;
         background-color: hsl(192, 100%, 9%);
         display: flex;
         flex-direction: column;
         color: #ffffff;
-        padding: 70px;
+        padding: 50px;
     }
 
     footer a {
@@ -637,7 +652,6 @@ footer {
     footer>.ft-intro,
     footer>.ft-social {
         width: 100%;
-        height: 45%;
         display: flex;
         flex-direction: column;
     }
@@ -645,15 +659,19 @@ footer {
     footer>.ft-link-1,
     footer>.ft-link-2 {
         width: 100%;
-        height: 5%;
-        margin-top: 90px;
         display: flex;
         flex-direction: column;
         margin-left: 0px;
     }
-
+    footer>.ft-link-1 {
+        margin-top: 120px;
+    }
+    footer>.ft-link-2 {
+        margin-top: 20px;
+    }
     footer > .ft-intro {
-        margin-top: 550px;
+        margin-top: 200px;
+        margin-bottom: -100px;
     }
     footer>.ft-intro div {
         padding-top: 20px;
@@ -679,8 +697,9 @@ footer {
     footer>.ft-social {
         display: flex;
         flex-direction: column;
-        margin-top: 200px;
-        margin-left: 50px;
+        margin-top: 100px;
+        margin-left: 0;
+        text-align: center;
     }
 
     footer>.ft-social i {
@@ -699,6 +718,6 @@ footer {
     footer small {
         clear: both;
         display: block;
-        margin-top: 200px;
+        margin-top: 30px;
     }
 }
