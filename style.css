@@ -89,6 +89,7 @@ nav  >  ul a {
 }
 .header-text button:hover {
     background-color: hsl(322, 84%, 75%);
+    box-shadow: 0 4px 8px 0#1817170a, 0 8px 20px 0 #25252513;
 }
 .header-img {
     width: 60%;
