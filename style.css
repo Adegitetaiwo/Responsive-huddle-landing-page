@@ -88,7 +88,7 @@ nav  >  ul a {
 }
 .header-img img {
     width: 85%;
-    height: 500px;
+    /* height: 100%; */
     margin-left: auto;
     margin-right: auto;
     margin-top: calc(50% - 280px);
