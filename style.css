@@ -270,7 +270,7 @@ add to this if you add any card to the markup */
     height: 300px;
 }
 .card:first-child {
-    margin-top: 20vh;
+    margin-top: 200px;
 }
 .card-item:first-child {
     padding: 60px 80px 0 50px;
