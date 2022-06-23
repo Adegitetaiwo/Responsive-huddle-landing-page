@@ -85,6 +85,10 @@ nav  >  ul a {
     box-shadow: -1px 9px 33px 6px #28282812;
     color: #ffffff;
     cursor: pointer;
+    transition: all 1s;
+}
+.header-text button:hover {
+    background-color: hsl(322, 84%, 75%);
 }
 .header-img {
     width: 60%;
@@ -97,7 +101,6 @@ nav  >  ul a {
     margin-top: calc(50% - 300px);
     padding-left: 30px;
 }
-
 /* ipad Air Screen */
 @media (max-width: 912px) {
     header {
@@ -412,7 +415,7 @@ section[class="call-to-act-sec"] {
     left: calc(50% - (47% / 2));
 
     /* negative height of the main section and some adustment */
-    bottom: calc(-870px - ((230px) * 3) - 170px - 40px);
+    bottom: calc(-870px - ((230px) * 3) - 170px - 130px);
 }
 .call-to-act-card {
     background-color: #ffffff;
