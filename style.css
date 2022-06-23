@@ -49,7 +49,7 @@ nav  >  ul a {
 }
 
 .header-text {
-    width: 500px;
+    height: 500px;
     width: 40%;
 }
 
@@ -58,7 +58,7 @@ nav  >  ul a {
     flex-direction: column;
     /* max-height: 400px; */
     /* background-color: aqua; */
-    margin-top: calc(50vh - 250px);
+    margin-top: calc(25% - 200px);
     padding: 40px 80px 60px 80px;
 }
 .header-text h1 {
