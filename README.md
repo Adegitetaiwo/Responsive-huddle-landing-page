@@ -2,4 +2,4 @@
 
 This is a responsive landing page built with HTML and CSS
 
-Link: 
+Link: https://adegitetaiwo.github.io/Responsive-huddle-landing-page/
